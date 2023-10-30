@@ -4,6 +4,8 @@
  * The app's list of Artists
  */
 
+// <!-- Karoly Nemeth | 021949144 | knemeth@myseneca.ca -->
+
 window.artists = [ 
   
   //Artist 1 

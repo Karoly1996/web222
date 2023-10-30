@@ -4,6 +4,9 @@
  * The app's songs
  */
 
+
+// <!-- Karoly Nemeth | 021949144 | knemeth@myseneca.ca -->
+
 window.songs = [
   // Martin Garrix 
   {

@@ -17,6 +17,9 @@
 // Create local variables to work with it in this file.
 const { artists, songs } = window;
 
+// <!-- Karoly Nemeth | 021949144 | knemeth@myseneca.ca -->
+
+
 document.addEventListener('DOMContentLoaded', function () {
     // Getting nav element by id 
     let menu = document.getElementById('menu');
