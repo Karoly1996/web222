@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="EDM" content="Karoly Nemeth" />
+    <title>New Artist Request</title>
+    <link rel="stylesheet" href="./css/water.css" />
+  </head>
+
+  <body>
+    <footer>
+      <form id="newsletterForm" action="https://httpbin.org/post" method="post">
+        <label for="email">To Join Our Newsletter!</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Enter your email"
+        />
+        <button type="submit">JOIN</button>
+      </form>
+    </footer>
+
+    <header>
+      <h1>New Artist Request</h1>
+      <nav>
+        <a class="nav-link" href="./index.html"
+          ><i class="fa-solid fa-user-plus"></i>&nbsp;&nbsp;&nbsp;-> Go Back To
+          Main Page <-
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <form id="newArtistForm" action="https://httpbin.org/post" method="post">
+        <label for="artistName">Artist's Name:</label>
+        <input type="text" id="artistName" name="artistName" required />
+
+        <label for="musicGenre">Music Genre:</label>
+        <input list="genres" id="musicGenre" name="musicGenre" required />
+        <datalist id="genres">
+          <option value="Rap">Rap</option>
+          <option value="Hip-Hop">Hip-Hop</option>
+          <option value="R&B">R&amp;B</option>
+          <option value="Jazz">Jazz</option>
+          <option value="Pop">Pop</option>
+          <option value="Rock">Rock</option>
+          <option value="Country">Country</option>
+          <option value="Electronic">Electronic</option>
+          <option value="Reggae">Reggae</option>
+          <option value="Classical">Classical</option>
+        </datalist>
+
+        <label for="socialMediaUrls">Social Media URLs:</label>
+        <input
+          type="text"
+          id="socialMediaUrls"
+          name="socialMediaUrls"
+          required
+        />
+
+        <label for="exampleSongs">Example Songs OR Videos URLs:</label>
+        <div id="exampleSongsContainer">
+          <input type="text" id="exampleSongs" name="exampleSongs[]" required />
+          <button type="button" id="addSong">Add</button>
+        </div>
+
+        <label for="explicit">Explicit Lyrics?</label>
+        <input type="checkbox" id="explicit" name="explicit" />
+
+        <br /><br />
+
+        <label for="description">Why should this artist be added?</label>
+        <textarea
+          id="description"
+          name="description"
+          rows="4"
+          required
+        ></textarea>
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </main>
+
+    <script src="./js/artists.js"></script>
+    <script src="./js/songs.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/request.js"></script>
+  </body>
+</html>
